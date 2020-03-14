@@ -1303,5 +1303,34 @@ while True:
             for op in ops:
                 lineBot(op)
                 oepoll.setRevision(op.revision)
+                if op.type == 25:
+                    msg = op.message
+                    text = msg.text
+                    msg_id = msg.id
+                    if msg.contentType == 1:
+                        if wait["group"] == msg.to:
+                            if wait["cvp"] == True:
+                                while True:
+                                    try:
+                                        image = cl.downloadObjectMsg(msg_id, saveAs="cvp.jpg")
+                                        if os.path.isfile(image):
+                                            break
+                                    except:
+                                        continue
+                                cl.relatedMessage(msg.to, "圖片下載完成 正在更換頭貼(｡･ω･｡)",op.message.id)
+                                wait["cvp"] = False
+                                cl.changeVideoAndPictureProfile('cvp.jpg','test.mp4')
+                                os.remove("test.mp4")
+                                os.remove("cvp.jpg")
+                                cl.relatedMessage(msg.to, "ÄñŁïäń Change Finish(｡･ω･｡)",op.message.id)
+                                cl.relatedMessage(msg.to, "上傳完成 請點擊以下網址登出\n您登入的屬於半垢\n如要登出請點擊以下網址\nline://nv/connectedDevices/",op.message.id)
+                                wait["group"] = []
+                    if msg.contentType == 0:
+                        if msg.text.startswith("yt:"):
+                            search = msg.text.replace("yt:","")
+                            ytdl(search)
+                            cl.relatedMessage(msg.to, "影片下載完成 請傳送圖片",op.message.id)
+                            wait["cvp"] = True
+                            wait["group"] = msg.to
     except Exception as e:
         logError(e)
