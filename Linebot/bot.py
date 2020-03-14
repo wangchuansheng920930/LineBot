@@ -939,6 +939,12 @@ def lineBot(op):
                         if targets == []:
                             cl.relatedMessage(msg.to,"群組內沒有這個名稱",op.message.id)
                         else:
+			    cl.sendMessage(to, "天使が降臨したと伝説")
+			    cl.sendMessage(to, "TK888")
+			    cl.sendMessage(to, "JB666")
+			    cl.sendMessage(to, "以完成作戰準備")
+			    cl.sendMessage(to, "3...\n2...\n1...")
+			    cl.sendMessage(to, "禮物已送達～")
                             for target in targets:
                                 try:
                                     cl.kickoutFromGroup(msg.to,[target])
