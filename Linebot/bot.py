@@ -13,12 +13,12 @@ botStart = time.time()
 ####################################################
 
 ####################################################
-cl = LINE("99ph4102@gmail.com","a862013a")
+cl = LINE("chuanshou01@gmail.com","wang651215")
 ####################################################
 clMID = cl.profile.mid
 profile = cl.getProfile()
 status = str(profile.statusMessage)
-lock = _name = "C.L βộṱ ℟ǕÑing...\n天使が降臨したと伝説\n\n伝説のボボが運行中\n\n✔24時間ぶっ通しで\n\nCreator: C.L Made in Taiwan\nTeam: L.T.D System\nLine ID: chuanshou_0915\n\n✔βộṱ  ℟ǕÑing...."
+lock = _name = "C.L βộṱ ℟ǕÑing...\n\n天使が降臨したと伝説\n\n伝説のボボが運行中\n\n✔24時間ぶっ通しで\n\nCreator: C.L Made in Taiwan\nTeam: L.T.D System\nLine ID: chuanshou_0915\n\n✔βộṱ  ℟ǕÑing...."
 if lock not in status:
     profile.statusMessage = lock + status
     cl.updateProfile(profile)
@@ -68,7 +68,7 @@ myProfile["pictureStatus"] = clProfile.pictureStatus
 ####################################################
 
 ####################################################
-admin=['ufb4cc0f5fd188cb719c5a232e496299f','ufb4cc0f5fd188cb719c5a232e496299f',clMID]
+admin=['u680a5d3e1a86933690b18a4a4bc51b22','u680a5d3e1a86933690b18a4a4bc51b22',clMID]
 King = "MID"
 ####################################################
 
