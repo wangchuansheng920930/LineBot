@@ -83,8 +83,8 @@ wait = {
     'rapidFire': {},
     'group': "",
     'getmid': True,
-    'um': turn,#收回高速
-    'cvp': turn,#更換頭貼
+    'um': True,#收回高速
+    'cvp': True,#更換頭貼
     'gbc':{},
     'resset': False#偵測更新
     }
