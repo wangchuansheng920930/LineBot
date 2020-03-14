@@ -932,7 +932,6 @@ def lineBot(op):
                         separate = text.split(":")
                         _name = text.replace(separate[0] + ":","")
                         gs = cl.getGroup(msg.to)
-			cl.sendMessage(msg.to, "天使が降臨したと伝説")
                         targets = []
                         for g in gs.members:
                             if _name in g.displayName:
