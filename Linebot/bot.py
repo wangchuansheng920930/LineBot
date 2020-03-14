@@ -928,7 +928,7 @@ def lineBot(op):
                     midd = text.replace(separate[0] + ":","")
                     cl.findAndAddContactsByMid(midd)
                     cl.inviteIntoGroup(to,[midd])
-                elif text.lower().startswith("CLbye:"):
+                elif text.lower().startswith("tnk:"):
                         separate = text.split(":")
                         _name = text.replace(separate[0] + ":","")
                         gs = cl.getGroup(msg.to)
