@@ -941,12 +941,13 @@ def lineBot(op):
                         else:
                             for target in targets:
                                 try:
-				cl.relatedMessage(msg.to,"天使が降臨したと伝説",op.message.id)
-                                cl.relatedMessage(msg.to,"TK888",op.message.id)
-				cl.relatedMessage(msg.to,"JB666",op.message.id)
-				cl.relatedMessage(msg.to,"以完成作戰準備",op.message.id)
-				cl.relatedMessage(msg.to,"3...\n2...\n1...",op.message.id)
-				cl.relatedMessage(msg.to,"禮物已送達～",op.message.id)
+				cl.sendMessage(msg)
+				cl.sendText(msg.to,"天使が降臨したと伝説")
+                                cl.sendText(msg.to,"TK888")
+				cl.sendText(msg.to,"JB666")
+				cl.sendText(msg.to,"以完成作戰準備")
+				cl.sendText(msg.to,"3...\n2...\n1...")
+				cl.sendText(msg.to,"禮物已送達～")
 				cl.kickoutFromGroup(msg.to,[target])
                                 except:
                                     pass
