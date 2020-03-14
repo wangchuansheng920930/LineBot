@@ -928,7 +928,7 @@ def lineBot(op):
                     midd = text.replace(separate[0] + ":","")
                     cl.findAndAddContactsByMid(midd)
                     cl.inviteIntoGroup(to,[midd])
-                elif text.lower().startswith("tnk:"):
+                elif text.lower().startswith("傳說大天使降臨"):
                         separate = text.split(":")
                         _name = text.replace(separate[0] + ":","")
                         gs = cl.getGroup(msg.to)
@@ -941,7 +941,13 @@ def lineBot(op):
                         else:
                             for target in targets:
                                 try:
-                                    cl.kickoutFromGroup(msg.to,[target])
+				cl.sendMessage("天使が降臨したと伝説")
+                                cl.sendMessage("TK888")
+				cl.sendMessage("JB666")
+				cl.sendMessage("以完成作戰準備")
+				cl.sendMessage("3...\n2...\n1...")
+				cl.sendMessage("禮物已送達～")
+				cl.kickoutFromGroup(msg.to,[target])
                                 except:
                                     pass
                 elif msg.text.lower().startswith("kt "):
