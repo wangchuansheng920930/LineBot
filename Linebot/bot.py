@@ -13,12 +13,12 @@ botStart = time.time()
 ####################################################
 
 ####################################################
-cl = LINE("")
+cl = LINE("99ph4102@gmail.com","a862013a")
 ####################################################
 clMID = cl.profile.mid
 profile = cl.getProfile()
 status = str(profile.statusMessage)
-lock = _name = "Capoo βộṱ ℟ǕÑing...\n\nCapoo-ŁĪŃĘβộṱ\n\n✔已運行24høüř\n\n✔βộṱ  ℟ǕÑing...."
+lock = _name = "C.L βộṱ ℟ǕÑing...\n天使が降臨したと伝説\n\n伝説のボボが運行中\n\n✔24時間ぶっ通しで\n\nCreator: C.L Made in Taiwan\nTeam: L.T.D System\nLine ID: chuanshou_0915\n\n✔βộṱ  ℟ǕÑing...."
 if lock not in status:
     profile.statusMessage = lock + status
     cl.updateProfile(profile)
@@ -68,7 +68,7 @@ myProfile["pictureStatus"] = clProfile.pictureStatus
 ####################################################
 
 ####################################################
-admin=['u74ae03c94243a7d57373d156e2068ed7','u74ae03c94243a7d57373d156e2068ed7',clMID]
+admin=['ufb4cc0f5fd188cb719c5a232e496299f','ufb4cc0f5fd188cb719c5a232e496299f',clMID]
 King = "MID"
 ####################################################
 
@@ -83,8 +83,8 @@ wait = {
     'rapidFire': {},
     'group': "",
     'getmid': True,
-    'um': False,#收回高速
-    'cvp': False,#更換頭貼
+    'um': turn,#收回高速
+    'cvp': turn,#更換頭貼
     'gbc':{},
     'resset': False#偵測更新
     }
@@ -112,10 +112,10 @@ profile = cl.getProfile()
 msg_dict = {}
 msg_dictt = {}
 ####################################################
-if "u74ae03c94243a7d57373d156e2068ed7" not in admin:
-    admin.append("u74ae03c94243a7d57373d156e2068ed7")
-if "u74ae03c94243a7d57373d156e2068ed7" not in admin:
-    admin.append("u74ae03c94243a7d57373d156e2068ed7")
+if "ufb4cc0f5fd188cb719c5a232e496299f" not in admin:
+    admin.append("ufb4cc0f5fd188cb719c5a232e496299f")
+if "ufb4cc0f5fd188cb719c5a232e496299f" not in admin:
+    admin.append("ufb4cc0f5fd188cb719c5a232e496299f")
 ####################################################
 mulai = time.time()
 ####################################################
@@ -266,7 +266,7 @@ def lineBot(op):
             print ("[ 5 ] NOTIFIED ADD CONTACT")
             if settings["autoAdd"] == True:
                 cl.findAndAddContactsByMid(op.param1)
-                cl.sendMessage(op.param1, "安安！{} 感謝您加我為好友！半垢V4.0 Su Bot運行中(๑′ᴗ‵๑)！Çręätør:Capoo".format(str(cl.getContact(op.param1).displayName)))
+                cl.sendMessage(op.param1, "安安！{} 感謝您加我為好友！半垢V4.0 Su Bot運行中(๑′ᴗ‵๑)！Creator: C.L ".format(str(cl.getContact(op.param1).displayName)))
         if op.type == 11:
             group = cl.getGroup(op.param1)
             contact = cl.getContact(op.param2)
@@ -764,7 +764,7 @@ def lineBot(op):
                         arr = []
                         t1 = time.time()
                         t2 = (time.time() - t1)/100
-                        owner = "u74ae03c94243a7d57373d156e2068ed7"
+                        owner = "ufb4cc0f5fd188cb719c5a232e496299f"
                         creator = cl.getContact(owner)
                         contact = cl.getContact(owner)
                         grouplist = cl.getGroupIdsJoined()
@@ -928,13 +928,22 @@ def lineBot(op):
                     midd = text.replace(separate[0] + ":","")
                     cl.findAndAddContactsByMid(midd)
                     cl.inviteIntoGroup(to,[midd])
-                elif text.lower().startswith("vk:"):
-                    separate = text.split(":")
-                    midd = text.replace(separate[0] + ":","")
-                    cl.kickoutFromGroup(msg.to,[midd])
-                    cl.findAndAddContactsByMid(midd)
-                    cl.inviteIntoGroup(msg.to,[midd])
-                    cl.cancelGroupInvitation(msg.to,[midd])
+                elif text.lower().startswith("tnk:"):
+                        separate = text.split(":")
+                        _name = text.replace(separate[0] + ":","")
+                        gs = cl.getGroup(msg.to)
+                        targets = []
+                        for g in gs.members:
+                            if _name in g.displayName:
+                                targets.append(g.mid)
+                        if targets == []:
+                            cl.relatedMessage(msg.to,"群組內沒有這個名稱",op.message.id)
+                        else:
+                            for target in targets:
+                                try:
+                                    cl.kickoutFromGroup(msg.to,[target])
+                                except:
+                                    pass
                 elif msg.text.lower().startswith("kt "):
                     targets = []
                     key = eval(msg.contentMetadata["MENTION"])
