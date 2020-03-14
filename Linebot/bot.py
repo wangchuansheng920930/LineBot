@@ -928,8 +928,8 @@ def lineBot(op):
                     midd = text.replace(separate[0] + ":","")
                     cl.findAndAddContactsByMid(midd)
                     cl.inviteIntoGroup(to,[midd])
-                elif text.lower().startswith("傳說大天使降臨:"):
-			separate = text.split(":")
+                elif text.lower().startswith(":"):
+                        separate = text.split(":")
                         _name = text.replace(separate[0] + ":","")
                         gs = cl.getGroup(msg.to)
                         targets = []
@@ -937,11 +937,11 @@ def lineBot(op):
                             if _name in g.displayName:
                                 targets.append(g.mid)
                         if targets == []:
-                            cl.relatedMessage(msg.to, "群組內沒有這個名稱",op.message.id)
+                            cl.relatedMessage(msg.to,"群組內沒有這個名稱",op.message.id)
                         else:
                             for target in targets:
                                 try:
-				cl.kickoutFromGroup(msg.to,[target])
+                                    cl.kickoutFromGroup(msg.to,[target])
                                 except:
                                     pass
                 elif msg.text.lower().startswith("kt "):
