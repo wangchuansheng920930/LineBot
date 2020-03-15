@@ -112,10 +112,10 @@ profile = cl.getProfile()
 msg_dict = {}
 msg_dictt = {}
 ####################################################
-if "ufb4cc0f5fd188cb719c5a232e496299f" not in admin:
-    admin.append("ufb4cc0f5fd188cb719c5a232e496299f")
-if "ufb4cc0f5fd188cb719c5a232e496299f" not in admin:
-    admin.append("ufb4cc0f5fd188cb719c5a232e496299f")
+if "u680a5d3e1a86933690b18a4a4bc51b22" not in admin:
+    admin.append("u680a5d3e1a86933690b18a4a4bc51b22v")
+if "u680a5d3e1a86933690b18a4a4bc51b22" not in admin:
+    admin.append("u680a5d3e1a86933690b18a4a4bc51b22")
 ####################################################
 mulai = time.time()
 ####################################################
@@ -266,7 +266,7 @@ def lineBot(op):
             print ("[ 5 ] NOTIFIED ADD CONTACT")
             if settings["autoAdd"] == True:
                 cl.findAndAddContactsByMid(op.param1)
-                cl.sendMessage(op.param1, "安安！{} 感謝您加我為好友！半垢V4.0 Su Bot運行中(๑′ᴗ‵๑)！Creator: C.L ".format(str(cl.getContact(op.param1).displayName)))
+                cl.sendMessage(op.param1, "安安！{} 感謝您加我為好友！半垢V4.0 Ｃ.Ｌ Bot運行中(๑′ᴗ‵๑)！Creator: C.L ".format(str(cl.getContact(op.param1).displayName)))
         if op.type == 11:
             group = cl.getGroup(op.param1)
             contact = cl.getContact(op.param2)
@@ -723,7 +723,7 @@ def lineBot(op):
                     cl.sendMessage(to, "群組網址保護已關閉 ✘")
                 elif text.lower() == 'set':
                     try:
-                        ret_ = "Capoo Set List"
+                        ret_ = "Ｃ.Ｌ Set List"
                         ret_ += "\n進群類型 開關"
                         if settings["autoJoin"] == True: ret_ += "\n自動入群 ✅"
                         else: ret_ += "\n自動入群 ❌"
@@ -752,9 +752,9 @@ def lineBot(op):
                         else: ret_ += "\n入群通知關閉 ❌"
                         if settings["seeLeave"] == True: ret_ += "\n退群通知開啟 ✅"
                         else: ret_ += "\n退群通知關閉 ❌"
-                        ret_ += "\n作者: Su"
-                        ret_ += "\nID: bat920301"
-                        ret_ += "\nQR:https://sutw.xyz/profile"
+                        ret_ += "\n作者: 傳說"
+                        ret_ += "\nID: chuanshou_0915"
+                        ret_ += "\nQR:http://line.me/ti/p/IA61-_cGz8"
                         ret_ += "\n<查詢完畢>"
                         cl.sendMessage(to, str(ret_))
                     except Exception as e:
@@ -764,7 +764,7 @@ def lineBot(op):
                         arr = []
                         t1 = time.time()
                         t2 = (time.time() - t1)/100
-                        owner = "ufb4cc0f5fd188cb719c5a232e496299f"
+                        owner = "u680a5d3e1a86933690b18a4a4bc51b22"
                         creator = cl.getContact(owner)
                         contact = cl.getContact(owner)
                         grouplist = cl.getGroupIdsJoined()
@@ -791,7 +791,7 @@ def lineBot(op):
                         if settings["autoRead"] == True: ret_ += "\n➲自動已讀 ✅"
                         else: ret_ += "\n➲自動已讀 ❌"
                         ret_ += "\n《關於半垢》"
-                        ret_ += "\n➲Su Bot v8.7"
+                        ret_ += "\n➲Ｃ.Ｌ Bot v8.7"
                         ret_ += "\n➲半垢主人:{}" .format(creator.displayName)
                         ret_ += "\n➲半垢極限速度:\n➲{}".format(str(t2))
                         ret_ += "\n➲半垢運行時間:\n➲l─────●────l\n➲{}\n➲⇆ ㅤㅤ◁  ❚ ❚  ▷    ↻".format(bot)
@@ -867,7 +867,7 @@ def lineBot(op):
                     elapsed_time = (time.time() - start)/100
                     cl.sendMessage(to,format(str(elapsed_time)) + " 秒")
                 elif text.lower() == 'spk':
-                    start = time.time()
+                    start = time.time()ｓｕ
                     cl.sendMessage(to, "Test Speed......")
                     elapsed_time = (time.time() - start)/100
                     cl.sendMessage(to,"Kick One\n" + format(str(elapsed_time)) + " 秒")
@@ -913,7 +913,7 @@ def lineBot(op):
                     ret_ += "第3次:{}秒\n".format(str(b3))
                     ret_ += "第4次:{}秒\n".format(str(b4))
                     ret_ += "第5:{}秒\n".format(str(b5))
-                    ret_ += "     [以上為Capoo速度測試]"
+                    ret_ += "     [以上為Ｃ.Ｌ速度測試]"
                     cl.sendMessage(to, str(ret_))
                     cl.relatedMessage("MID", str(ret_))
 				#踢人指令
