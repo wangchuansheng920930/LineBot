@@ -867,7 +867,7 @@ def lineBot(op):
                     elapsed_time = (time.time() - start)/100
                     cl.sendMessage(to,format(str(elapsed_time)) + " 秒")
                 elif text.lower() == 'spk':
-                    start = time.time()ｓｕ
+                    start = time.time()
                     cl.sendMessage(to, "Test Speed......")
                     elapsed_time = (time.time() - start)/100
                     cl.sendMessage(to,"Kick One\n" + format(str(elapsed_time)) + " 秒")
