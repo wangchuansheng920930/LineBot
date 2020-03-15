@@ -764,7 +764,7 @@ def lineBot(op):
                         arr = []
                         t1 = time.time()
                         t2 = (time.time() - t1)/100
-                        owner = "u680a5d3e1a86933690b18a4a4bc51b22"
+                        owner = "ubddc32c655b412b8bf0eaf5e6a142ea9"
                         creator = cl.getContact(owner)
                         contact = cl.getContact(owner)
                         grouplist = cl.getGroupIdsJoined()
@@ -791,7 +791,7 @@ def lineBot(op):
                         if settings["autoRead"] == True: ret_ += "\n➲自動已讀 ✅"
                         else: ret_ += "\n➲自動已讀 ❌"
                         ret_ += "\n《關於半垢》"
-                        ret_ += "\n➲Ｃ.Ｌ Bot v8.7"
+                        ret_ += "\n➲Ć.Ł βØŦ ｖ４.０"
                         ret_ += "\n➲半垢主人:{}" .format(creator.displayName)
                         ret_ += "\n➲半垢極限速度:\n➲{}".format(str(t2))
                         ret_ += "\n➲半垢運行時間:\n➲l─────●────l\n➲{}\n➲⇆ ㅤㅤ◁  ❚ ❚  ▷    ↻".format(bot)
