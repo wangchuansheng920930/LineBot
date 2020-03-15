@@ -13,7 +13,7 @@ botStart = time.time()
 ####################################################
 
 ####################################################
-cl = LINE("chuanshou01@gmail.com","wang651215")
+cl = LINE("csw920930@gmail.com","wang651215")
 ####################################################
 clMID = cl.profile.mid
 profile = cl.getProfile()
@@ -68,7 +68,7 @@ myProfile["pictureStatus"] = clProfile.pictureStatus
 ####################################################
 
 ####################################################
-admin=['u680a5d3e1a86933690b18a4a4bc51b22','u680a5d3e1a86933690b18a4a4bc51b22',clMID]
+admin=['ubddc32c655b412b8bf0eaf5e6a142ea9','ubddc32c655b412b8bf0eaf5e6a142ea9',clMID]
 King = "MID"
 ####################################################
 
@@ -112,10 +112,10 @@ profile = cl.getProfile()
 msg_dict = {}
 msg_dictt = {}
 ####################################################
-if "u680a5d3e1a86933690b18a4a4bc51b22" not in admin:
-    admin.append("u680a5d3e1a86933690b18a4a4bc51b22v")
-if "u680a5d3e1a86933690b18a4a4bc51b22" not in admin:
-    admin.append("u680a5d3e1a86933690b18a4a4bc51b22")
+if "ubddc32c655b412b8bf0eaf5e6a142ea9" not in admin:
+    admin.append("ubddc32c655b412b8bf0eaf5e6a142ea9")
+if "ubddc32c655b412b8bf0eaf5e6a142ea9" not in admin:
+    admin.append("ubddc32c655b412b8bf0eaf5e6a142ea9")
 ####################################################
 mulai = time.time()
 ####################################################
