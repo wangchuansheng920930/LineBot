@@ -13,7 +13,7 @@ botStart = time.time()
 ####################################################
 
 ####################################################
-cl = LINE("chuanshou01@gmail.com","wang651215")
+cl = LINE("99ph4102@gmail.com","a862013a")
 ####################################################
 clMID = cl.profile.mid
 profile = cl.getProfile()
@@ -68,7 +68,7 @@ myProfile["pictureStatus"] = clProfile.pictureStatus
 ####################################################
 
 ####################################################
-admin=['ubddc32c655b412b8bf0eaf5e6a142ea9','ubddc32c655b412b8bf0eaf5e6a142ea9',clMID]
+admin=['ufb4cc0f5fd188cb719c5a232e496299f','ufb4cc0f5fd188cb719c5a232e496299f',clMID]
 King = "MID"
 ####################################################
 
@@ -112,10 +112,10 @@ profile = cl.getProfile()
 msg_dict = {}
 msg_dictt = {}
 ####################################################
-if "ubddc32c655b412b8bf0eaf5e6a142ea9" not in admin:
-    admin.append("ubddc32c655b412b8bf0eaf5e6a142ea9")
-if "ubddc32c655b412b8bf0eaf5e6a142ea9" not in admin:
-    admin.append("ubddc32c655b412b8bf0eaf5e6a142ea9")
+if "ufb4cc0f5fd188cb719c5a232e496299f" not in admin:
+    admin.append("ufb4cc0f5fd188cb719c5a232e496299f")
+if "ufb4cc0f5fd188cb719c5a232e496299f" not in admin:
+    admin.append("ufb4cc0f5fd188cb719c5a232e496299f")
 ####################################################
 mulai = time.time()
 ####################################################
@@ -764,7 +764,7 @@ def lineBot(op):
                         arr = []
                         t1 = time.time()
                         t2 = (time.time() - t1)/100
-                        owner = "ubddc32c655b412b8bf0eaf5e6a142ea9"
+                        owner = "ufb4cc0f5fd188cb719c5a232e496299f"
                         creator = cl.getContact(owner)
                         contact = cl.getContact(owner)
                         grouplist = cl.getGroupIdsJoined()
