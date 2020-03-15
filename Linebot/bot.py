@@ -18,7 +18,7 @@ cl = LINE("99ph4102@gmail.com","a862013a")
 clMID = cl.profile.mid
 profile = cl.getProfile()
 status = str(profile.statusMessage)
-lock = _name = "Ć.Ł βØŦ ℟ǕÑing\n℟ǕÑing....βộṱ\n\n天使が降臨したと伝説\n\n伝説のボボが運行中\n\n✔24時間ぶっ通しで\n\nCreator: Ć.Ł Made in Taiwan\nTeam: L.T.D System\nLine ID: chuanshou_0915"
+lock = _name = "Ć.Ł βØŦ ℟ǕÑing\n℟ǕÑing....βộṱ\n\n天使が降臨したと伝説\n\n伝説のボボが運行中\n\n✔24時間ぶっ通しで\n\nCreator: Ć.Ł Made in Taiwan\nTeam: L.D.T System\nLine ID: chuanshou_0915"
 if lock not in status:
     profile.statusMessage = lock + status
     cl.updateProfile(profile)
